@@ -1,7 +1,8 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <assert.h>
-#include <math.h>   
+#include <math.h> 
+#include <string.h>
 
 // Return the bit value (0 or 1) at position pos of unsigned int n
 // Note that the least significant bit position is 0. 
