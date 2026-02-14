@@ -70,5 +70,14 @@ unsigned char get_exponent_field(float f)
 //smallest *representable* floating point number larger than f  
 float get_precision(float f)
 {
-  return nextafterf(f, INFINITY) - f;
+    float next = f;
+    float eps = 1.0f;
+
+    while (f + eps != f)
+    {
+        next = f + eps;
+        eps = eps / 2.0f;
+    }
+
+    return next - f;
 }
