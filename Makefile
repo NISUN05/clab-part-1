@@ -12,7 +12,7 @@ submitfiles:
 clab_test: $(OBJS)
 	gcc $^ -o $@ -lm
 
-%.o : %.c %.h
+%.o : %.c
 	gcc $(CFLAGS) -c ${<}
 
 
