@@ -10,9 +10,9 @@ submitfiles:
 	zip submitfiles.zip *.c *.h Makefile
 
 clab_test: $(OBJS)
-	gcc $^ -o $@ -lm
+	gcc $^ -o $@ 
 
-%.o : %.c
+%.o : %.c %.h
 	gcc $(CFLAGS) -c ${<}
 
 
