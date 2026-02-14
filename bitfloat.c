@@ -1,9 +1,7 @@
-#define _GNU_SOURCE  
-#include <math.h> 
 #include <stdbool.h>
 #include <stdio.h>
 #include <assert.h>
-#include <string.h> 
+#include <math.h>  
 
 // Return the bit value (0 or 1) at position pos of unsigned int n
 // Note that the least significant bit position is 0. 
